@@ -1,12 +1,78 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context="${relativePackage}.${activityClass}">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="${relativePackage}.${activityClass}">
 
-    <TextView
-            android:text="@string/hello_world"
+    <Button
+            android:id="@+id/quanxian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="申请权限"
+            />
+    <Button
+            android:id="@+id/chaxun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="查询权限"
+            />
+    <Button
+            android:id="@+id/dakai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="打开设备"
+            />
+    <Button
+            android:id="@+id/fasong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="发送指令"
+            />
+    <EditText
+            android:id="@+id/et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="20"
+            />
+    <EditText
+            android:id="@+id/et1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="9"
+            />
+    <EditText
+            android:id="@+id/et2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="300"
+            />
+    <EditText
+            android:id="@+id/et3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="00"
+            />
+    <EditText
+            android:id="@+id/et4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+    <Button android:id="@+id/fire"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="onClick"
+            android:textSize="36sp"
+            android:text="@string/fire">
+    </Button>
 
-</RelativeLayout>
+</LinearLayout>
