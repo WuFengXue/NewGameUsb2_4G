@@ -109,8 +109,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Runn
             case R.id.quanxian:
                 if (mUsbManager != null && mDevice != null) {
                     mUsbManager.requestPermission(mDevice, mUsbPermissionIntent);
+                } else if (mUsbManager == null) {
+                    Toast.makeText(this, "device not ready: mUsbManager is null!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(this, "device not ready!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "device not ready: mDevice is null!", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.chaxun:
